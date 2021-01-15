@@ -236,10 +236,11 @@ return(
                     <button className="search-btn fa fa-search" onClick={()=>searchproduct()}></button>
                 </div>
             </div>
-        <div className='row container'>
-        
+         
+         <h6>Ready-made Apparels</h6><br></br>
+         <div className='row container'> 
             {  list?
-                list.map(item=>{
+                list.filter((item) => item.category === "ready").map(item=>{
                     return(   
                         <div className="col-12 col-md-2 mb-4 ">
                             <Card className="shop-product-card">
@@ -274,8 +275,88 @@ return(
                 }):
                 <Loading />
             }
-       
-        </div>
+         </div>
+
+         <h6>ornament</h6><br></br>
+         <div className='row container'> 
+            {  list?
+                list.filter((item) => item.category === "ornament").map(item=>{
+                    return(   
+                        <div className="col-12 col-md-2 mb-4 ">
+                            <Card className="shop-product-card">
+                                <CardTitle className='t'>{item.name}</CardTitle>
+                                <CardSubtitle>{item.size}</CardSubtitle>
+                                <CardImg height="200px" width="auto" src={item.image} alt={item.name} />
+                                {/* <div><img src={item.image} height='200px' width='200px' /></div> */}
+                                <div className='t'>₹ {item.price}</div>
+                               { item.quantity!=0?<div><div>
+                                    <button className='shop-button' disabled={item.quantity>0&&ab[item._id]?((cart[item._id]>=item.maxQuantity||cart[item._id]>=item.quantity)?true:false):true} onClick={()=>addtocart(item._id)}>+</button>
+                                    <span className='t'>{cart[item._id]?cart[item._id]:0}</span>
+                                    <button className='shop-button' disabled={cart[item._id]?(cart[item._id]>0?false:true):true} onClick={()=>removefromcart(item._id)}>-</button>
+                                </div>
+                                {
+                                   item.quantity>= 30?
+                                   <div className="in-stock">IN STOCK</div>
+                                   :<div></div>                                   
+                                }
+                                    {/* <div>max quantity : {item.maxQuantity}</div> */}
+                                {/* <div>total quantity : {item.quantity}</div> */}
+                                </div>
+                                :<div className="out-stock">OUT OF STOCK</div>
+                               }
+                               {
+                                  (item.quantity!=0 && item.quantity< 30)?
+                                  <div className="limited-avail">LIMITED AVAILABILTY</div>
+                                  :<div></div>                                  
+                               }
+                            </Card>
+                        </div>
+                    )
+                }):
+                <Loading />
+            }
+         </div>
+
+         <h6>fabric</h6><br></br>
+         <div className='row container'> 
+            {  list?
+                list.filter((item) => item.category === "fabric").map(item=>{
+                    return(   
+                        <div className="col-12 col-md-2 mb-4 ">
+                            <Card className="shop-product-card">
+                                <CardTitle className='t'>{item.name}</CardTitle>
+                                <CardSubtitle>{item.size}</CardSubtitle>
+                                <CardImg height="200px" width="auto" src={item.image} alt={item.name} />
+                                {/* <div><img src={item.image} height='200px' width='200px' /></div> */}
+                                <div className='t'>₹ {item.price}</div>
+                               { item.quantity!=0?<div><div>
+                                    <button className='shop-button' disabled={item.quantity>0&&ab[item._id]?((cart[item._id]>=item.maxQuantity||cart[item._id]>=item.quantity)?true:false):true} onClick={()=>addtocart(item._id)}>+</button>
+                                    <span className='t'>{cart[item._id]?cart[item._id]:0} m</span>
+                                    <button className='shop-button' disabled={cart[item._id]?(cart[item._id]>0?false:true):true} onClick={()=>removefromcart(item._id)}>-</button>
+                                </div>
+                                {
+                                   item.quantity>= 30?
+                                   <div className="in-stock">IN STOCK</div>
+                                   :<div></div>                                   
+                                }
+                                    {/* <div>max quantity : {item.maxQuantity}</div> */}
+                                {/* <div>total quantity : {item.quantity}</div> */}
+                                </div>
+                                :<div className="out-stock">OUT OF STOCK</div>
+                               }
+                               {
+                                  (item.quantity!=0 && item.quantity< 30)?
+                                  <div className="limited-avail">LIMITED AVAILABILTY</div>
+                                  :<div></div>                                  
+                               }
+                            </Card>
+                        </div>
+                    )
+                }):
+                <Loading />
+            }
+         </div>
+
         <div>
            {
               list.length==0&&loading?

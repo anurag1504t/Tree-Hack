@@ -206,7 +206,7 @@ return(
                                         <div>
                                             <details className='det'>
                                             <summary>order item list</summary>
-                                            
+                                                Reference No: {item._id}
                                                 <ul>
                                                     {                                                
                                                         item.items.filter(pro=>{return pro.quantity!=0}).map(prod=>{

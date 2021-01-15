@@ -96,12 +96,7 @@ return(
        <div>  <input className="col-12" type='text' minlength="5" maxLength="20" placeholder='Username' value={username} onChange={(e)=>setuid(e.target.value)} /></div> 
        <div><input className="col-12" type='password' minlength="6" maxLength="20" placeholder='Password' value={password} onChange={(e)=>setpassword(e.target.value)} /></div> 
        <div> <input className="col-12" type='password' minlength="6" maxLength="20" placeholder='Verify Password' value={repassword} onChange={(e)=>setrepassword(e.target.value)} /></div> 
-        <div>Living in: 
-            <select  value={livein} onChange={(e)=>setlivein(e.target.value)}>
-            <option value='true'>living in</option>
-            <option value='false'>not living in</option>
-            </select>
-        </div>
+        
        <div>  <input className="signup-button" type='submit' value='Register' /></div> 
        </form>
         <p>have an account?</p>
