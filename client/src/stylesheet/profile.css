@@ -1,0 +1,116 @@
+.main-profile {
+    font-size:20px;
+    /* font-variant: small-caps; */
+    /* margin:20px;
+    margin-bottom: 0px; */
+    padding: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-details {
+    /* margin: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #242F3E;
+    color: floralwhite;
+    border-radius: 50px;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-button {
+    background-color: #242F3E;
+    font-size:15px;
+    color:floralwhite;
+    margin:10px;
+    padding:10px 20px;
+    border-radius: 20px;
+    border: 1px solid , #242F3E;
+    font-variant:small-caps;
+}
+
+.profile-image {
+    border-radius: 50px;
+    height: auto;
+    width: auto;
+}
+
+.ul-order {
+    padding: 0px;
+    margin: 0px;
+}
+
+.dd{
+    font-size:20px;
+    padding-left: 20px;
+    /* font-variant:small-caps; */
+}
+
+.order{
+    font-size: 15px;
+    color:black;
+    font-variant: small-caps;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oh{
+    font-size: 30px;
+}
+.oi{
+    padding:20px;
+    margin:5px;
+    font-size:20px;
+    border:2px solid black;
+    border-radius:5px;
+    display: inline-block;
+}
+.pi{
+    padding:10px;
+    margin:2px;
+    font-size:15px;
+    border:1px solid black;
+    border-radius:5px;
+}
+.det{
+    margin:10px;
+}
+.timeslot2{
+    color:blue;
+}
+.tm2{
+    font-size: 15px;
+    color: black;
+}
+
+.rout2{
+    display:inline;
+    font-size:20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+    font-variant:small-caps;
+}
+
+.profile-instruction {
+    color: floralwhite;
+    background-color:  #242F3E;
+    padding:20px;
+    font-size:20px;
+    font-variant: small-caps;
+    /* margin:20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    border-radius: 50px;
+    /* text-align: center; */
+    /* vertical-align: middle; */
+}

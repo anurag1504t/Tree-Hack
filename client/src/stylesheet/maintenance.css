@@ -1,0 +1,30 @@
+.main-body {
+    text-align: center; 
+    padding: 80px;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    font: 20px Helvetica, sans-serif; 
+    color: #333;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.msg 
+{ 
+    display: block; 
+    text-align: left; 
+    /* width: 650px;  */
+    margin: 0 auto; 
+}
+
+a {
+    color: #dc8100; 
+    text-decoration: none; 
+}
+
+a:hover { 
+    color: floralwhite; 
+    text-decoration: none; 
+}

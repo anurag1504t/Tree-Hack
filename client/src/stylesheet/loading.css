@@ -1,0 +1,56 @@
+@keyframes loadinganimation{
+0%{
+    background:linear-gradient(to right,black 0%,white);
+}
+10%{
+    background:linear-gradient(to right,black 10%,white);
+}
+20%{
+    background:linear-gradient(to right,black 20%,white);
+}
+30%{
+    background:linear-gradient(to right,black 30%,white);
+}
+40%{
+    background:linear-gradient(to right,black 40%,white);
+}
+50%{
+    background:linear-gradient(to right,black 50%,white);
+}
+60%{
+    background:linear-gradient(to right,black 60%,white);
+}
+70%{
+    background:linear-gradient(to right,black 70%,white);
+}
+80%{
+    background:linear-gradient(to right,black 80%,white);
+}
+90%{
+    background:linear-gradient(to right,black 90%,white);
+}
+100%{
+    background:linear-gradient(to right,black 100%,white);
+}
+}
+
+.loader-main {
+    padding: 20px;
+    align-content: center;
+    margin-top: 100px;
+    margin-bottom: 300px;
+}
+
+.loader{
+    padding:10px;
+    margin:20px;
+    
+    font-family: Comic Sans MS;
+    transition:0.5s;
+    border:5px solid black;
+    animation:loadinganimation 0.5s infinite;
+    animation-direction: alternate;
+    border-radius:80px;
+    color:white;
+    vertical-align: middle;
+}

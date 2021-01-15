@@ -1,0 +1,30 @@
+.footer {
+    background-color: #242F3E;
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
+    color:floralwhite;
+    position: bottom;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.copyright {
+    text-align: center;
+    align-items: center;
+}
+.yoyos{
+    background-color: #242F3E;
+    margin:0px auto;
+    /* padding: 20px 0px 20px 0px; */
+    color:floralwhite;
+    position: bottom;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    align-items: center;
+}
