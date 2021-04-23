@@ -1,3 +1,3 @@
 module.exports={
-    serverurl: "/api"
+    serverurl: "https://hack-tree.herokuapp.com/api"
 }
